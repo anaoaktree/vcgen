@@ -19,7 +19,6 @@
 
 <!-- libs -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <link rel="stylesheet" href="css/normalize.css">
    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 <!-- xx libs -->
 
@@ -30,7 +29,7 @@
 <!-- xx Bootstrap -->
 
 <!-- Mine-->
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="{% static 'textinterface/css/style.css' %}">
 
 </head>
 
@@ -65,7 +64,7 @@ for (var i = 0; i < minLines; i++) {
     });
     codeEditor.setValue(startingValue)
 </script>
-<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="{% static 'textinterface/js/script.js' %}"></script>
 
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
