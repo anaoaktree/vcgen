@@ -44,7 +44,7 @@ function loadFileAsText()
 
 function getResultConds(){
 	//ajax request to get conditions
-	document.getElementById("result-div").innerHTML= document.getElementById("inputTextToSave").value;
+	document.getElementById("result-div").innerHTML = codeEditor.getValue();
 }
 
 window.onload = function(){
