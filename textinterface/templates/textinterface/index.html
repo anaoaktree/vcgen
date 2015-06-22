@@ -11,10 +11,10 @@
 <!--
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
          Place favicon.ico in the root directory -->
-
+{% load staticfiles %}
 <!-- Code mirror -->
-	<link rel="stylesheet" href="css/codemirror.css">
-	<script type="text/javascript" src="js/codemirror.js"></script>
+	<link rel="stylesheet" href="{% static 'textinterface/css/codemirror.css' %}">
+	<script type="text/javascript" src="{% static 'textinterface/js/codemirror.js' %}"></script>
 <!-- xx Code mirror -->
 
 <!-- libs -->
