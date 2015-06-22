@@ -1,0 +1,13 @@
+ @ pre size >= 1 
+ @ post  0 <= max and max<size and (forall a: (a>=0 and a<size) implies u[a]<=u[max]) 
+
+
+max := 0;
+i := 1;
+
+while i < size do
+{1<=i and i<=size and 0<=max and max<i and (forall a: (0 <= a and a<i) implies u[a]<=u[max])}
+
+if u[i] > u[max] then max := i end;
+  i := i+1
+end

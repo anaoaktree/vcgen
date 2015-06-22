@@ -1,0 +1,4 @@
+@ pre 0==0
+@ post res  >= x and res >= y and (res == x or res == y)
+
+if (x > y) then res := x  else res := y end

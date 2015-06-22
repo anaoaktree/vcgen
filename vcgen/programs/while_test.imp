@@ -1,0 +1,9 @@
+ @ pre x>100 and x<=1000 and z>0
+ @ post x>=1000
+
+y:=y/z;
+
+while x < 1000 do
+{100 < x and x<= 1000}
+  x:=x+1
+end

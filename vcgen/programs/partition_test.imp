@@ -1,0 +1,24 @@
+@ pre 0 <= p and p <= r and 0 <= p and p <= r
+@ post 0==0
+
+x := a[r];
+tmp := tmp;
+j := p;
+i := p-1;
+
+while j<r  do 
+{p <= j and j <= r and p-1 <= i and i < j} 
+if ( x >= a[j] ) then 
+	      i := i+1;
+	      tmp := a[i];
+	      a[i] := a[j];
+	      a[j] := tmp
+	   end;
+	   j := j+1
+end;
+
+tmp := a[i+1];
+a[i+1] := a[r];
+a[r] := tmp;
+     
+res := i+1
