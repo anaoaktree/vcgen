@@ -44,11 +44,10 @@ function loadFileAsText()
 
 function getResultConds(){
 	//ajax request to get conditions
-	document.getElementById("result-div").value= document.getElementById("inputTextToSave").value;
+	document.getElementById("result-div").innerHTML= document.getElementById("inputTextToSave").value;
 }
 
 window.onload = function(){
-	alert("jel");
 	//checked jsperf.com for perfomance
 	document.getElementById("loadFileBtn").addEventListener("click", loadFileAsText);
 	document.getElementById("saveAsFileBtn").addEventListener("click", saveTextAsFile);
