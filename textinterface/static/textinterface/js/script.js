@@ -42,9 +42,17 @@ function loadFileAsText()
 	fileReader.readAsText(fileToLoad, "UTF-8");
 }
 
+function getResultConds(){
+	//ajax request to get conditions
+	document.getElementById("result-div").value= document.getElementById("inputTextToSave").value;
+}
+
 document.onload = function(){
 	//checked jsperf.com for perfomance
-	document.getElementById("loadFileBtn").addEventListener("click",loadFileAsText);
+	document.getElementById("loadFileBtn").addEventListener("click", loadFileAsText);
+	document.getElementById("saveAsFileBtn").addEventListener("click", saveTextAsFile);
+	document.getElementById("getResult").addEventListener("click", getResultConds);
+
 
 
 };
