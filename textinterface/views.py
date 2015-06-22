@@ -3,4 +3,5 @@ from django.http import HttpResponse, JsonResponse
 
 # Create your views here.
 def index(request):
-    return JsonResponse({'foo': 'bar'})
+	return render(request, 'textinterface/index.html', {})
+    
