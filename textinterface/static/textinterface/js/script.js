@@ -47,7 +47,7 @@ function getResultConds(){
 	document.getElementById("result-div").value= document.getElementById("inputTextToSave").value;
 }
 
-document.onload = function(){
+window.onload = function(){
 	alert("jel");
 	//checked jsperf.com for perfomance
 	document.getElementById("loadFileBtn").addEventListener("click", loadFileAsText);
