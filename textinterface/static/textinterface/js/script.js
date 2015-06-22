@@ -41,3 +41,10 @@ function loadFileAsText()
 	};
 	fileReader.readAsText(fileToLoad, "UTF-8");
 }
+
+document.onload = function(){
+	//checked jsperf.com for perfomance
+	document.getElementById("loadFileBtn").addEventListener("click",loadFileAsText);
+
+
+};
