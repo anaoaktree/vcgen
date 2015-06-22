@@ -48,6 +48,7 @@ function getResultConds(){
 }
 
 document.onload = function(){
+	alert("jel");
 	//checked jsperf.com for perfomance
 	document.getElementById("loadFileBtn").addEventListener("click", loadFileAsText);
 	document.getElementById("saveAsFileBtn").addEventListener("click", saveTextAsFile);
