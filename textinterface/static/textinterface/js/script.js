@@ -67,6 +67,9 @@ function getResultConds(){
 	event.preventDefault();
 
 	var textToWrite = codeEditor.getValue();
+	var codetrans={
+     	'code': textToWrite,
+     };
   
     xhr = createRequest();
 	xhr.open("POST", "/getconds", true);
@@ -76,11 +79,11 @@ function getResultConds(){
 	  		var resp = JSON.parse(xhr.responseText);
 	  		if (resp.err=="true"){alert(resp.msg);}
 	  		else{
-	  			adminPage();}
+	  			}
 
 	  		}
 	}
-	xhr.send(String(textToWrite));
+	xhr.send(JSON.stringify(codetrans));
 }
 
 window.onload = function(){
