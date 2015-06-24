@@ -3,5 +3,5 @@ from django.http import HttpResponse, JsonResponse
 
 # Create your views here.
 def getconds(request):
-	print "request mything", request.body, request.request
+	print "request mything", request.body, request["code"]
 	return HttpResponse("heybi")
