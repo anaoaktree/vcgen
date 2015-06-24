@@ -67,8 +67,10 @@ function getResultConds(){
 	event.preventDefault();
 
 	var textToWrite = codeEditor.getValue();
+
 	var codetrans={
      	'code': textToWrite,
+     	'msg': 'hello'
      };
   
     xhr = createRequest();
