@@ -69,7 +69,7 @@ function getResultConds(){
 	var textToWrite = codeEditor.getValue();
 
 	var codetrans={
-     	'code': textToWrite,
+     	'code': "hi",
      	'msg': 'hello'
      };
   
