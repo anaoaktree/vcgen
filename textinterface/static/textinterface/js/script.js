@@ -41,6 +41,7 @@ function loadFileAsText()
 	};
 	fileReader.readAsText(fileToLoad, "UTF-8");
 }
+
 function createRequest() {
   try {
     request = new XMLHttpRequest();
