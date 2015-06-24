@@ -44,7 +44,23 @@ function loadFileAsText()
 
 function getResultConds(){
 	//ajax request to get conditions
-	document.getElementById("result-div").innerHTML = codeEditor.getValue();
+	event.preventDefault();
+
+	var textToWrite = codeEditor.getValue();
+  
+    xhr = createRequest();
+	xhr.open("POST", "/getconds", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.onreadystatechange = function() {
+	  	if (xhr.readyState == 4) {
+	  		var resp = JSON.parse(xhr.responseText);
+	  		if (resp.err=="true"){alert(resp.msg);}
+	  		else{
+	  			adminPage();}
+
+	  		}
+	}
+	xhr.send(textToWrite);
 }
 
 window.onload = function(){
