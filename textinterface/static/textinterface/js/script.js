@@ -69,7 +69,7 @@ function getResultConds(){
 	//var textToWrite = codeEditor.getValue();
 
 	var codetrans={
-     	'code': "hi",
+     	'code': 'hi',
      	'msg': 'hello'
      };
   
@@ -78,10 +78,7 @@ function getResultConds(){
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
 	  	if (xhr.readyState == 4) {
-	  		var resp = JSON.parse(xhr.responseText);
-	  		if (resp.err=="true"){alert(resp.msg);}
-	  		else{
-	  			}
+	  		alert("done");
 
 	  		}
 	}
