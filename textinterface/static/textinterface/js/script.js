@@ -41,6 +41,25 @@ function loadFileAsText()
 	};
 	fileReader.readAsText(fileToLoad, "UTF-8");
 }
+function createRequest() {
+  try {
+    request = new XMLHttpRequest();
+  } catch (trymicrosoft) {
+    try {
+      request = new ActiveXObject ("Msxml2.XMLHTTP");
+  } catch (othermicrosoft) {
+    try {
+      request = new ActiveXObject("Microsoft.XMLHTTP");
+    } catch (failed) {
+      request = null;
+    }
+  }
+}
+
+if (request == null)
+  alert("Error creating request object!");
+return request;
+};
 
 function getResultConds(){
 	//ajax request to get conditions
