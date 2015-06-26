@@ -86,11 +86,12 @@ function getResultConds(){
 
     xhr = createRequest();
 	xhr.open("POST", "/getconds/", true);
+	xhr.responseType = 'arraybuffer';
     xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
-    xhr.onreadystatechange = function() {
+    xhr.onreadystatechange = function(e) {
 	  	if (xhr.readyState == 4) {
-	  		alert("done");
-
+	  		conds = this.responseText;
+	  		console.log(conds);		
 	  		}
 	}
 	xhr.send(textToWrite);

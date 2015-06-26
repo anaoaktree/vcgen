@@ -4,4 +4,4 @@ import json, elsa
 # Create your views here.
 def getconds(request):
 	result = elsa.start(request.body)
-	return HttpResponse("heybi " + result[0])
+	return HttpResponse(result)
