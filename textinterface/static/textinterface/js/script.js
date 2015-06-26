@@ -86,7 +86,6 @@ function getResultConds(){
 
     xhr = createRequest();
 	xhr.open("POST", "/getconds/", true);
-    xhr.setRequestHeader('Content-Type', 'text/plain');
     xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
     xhr.onreadystatechange = function() {
 	  	if (xhr.readyState == 4) {
@@ -94,7 +93,7 @@ function getResultConds(){
 
 	  		}
 	}
-	xhr.send(String(textToWrite));
+	xhr.send(textToWrite);
 }
 
 window.onload = function(){
