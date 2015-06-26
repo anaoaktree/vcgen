@@ -6,6 +6,10 @@ from imp_vcgen import *
 
 from argparse import *
 
+sys.path.append(".")
+import z3
+
+
 
 def find_proc(ast,name):
 	if proc(ast) and ast.name==name:
