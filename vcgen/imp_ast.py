@@ -55,6 +55,7 @@ def replace(self,x,y):
 # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 import sys
 from equality import *
+sys.path.append(".")
 from z3 import *
 
 #####################################
