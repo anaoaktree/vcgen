@@ -82,10 +82,10 @@ function getResultConds(){
 	//ajax request to get conditions
 	event.preventDefault();
 
-	//var textToWrite = codeEditor.getValue();
+	var textToWrite = codeEditor.getValue();
 
 	var codetrans={
-     	'code': 'hi',
+     	'code': textToWrite,
      	'msg': 'hello'
      };
   
