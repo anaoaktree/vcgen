@@ -37,11 +37,9 @@ def start(text):
 	parse_result = imp_parse(tokens)
 	if not parse_result:
 		return ["error"]
-	print "{0:.3f} |Building AST... ".format(time.time()-init)
-	ast = parse_result.value
-
-# Generates conditions for the whole program file #	
 	else:
+		print "{0:.3f} |Building AST... ".format(time.time()-init)
+		ast = parse_result.value
 		print "{0:.3f} |Generating Verification Conditions... ".format(time.time()-init)
 		conditions=parse_conds(conds)
 		if conditions:
