@@ -36,16 +36,9 @@ def start(text):
 # Parses the tokens of the program into valid types for the ast#
 	parse_result = imp_parse(tokens)
 	if not parse_result:
-		sys.stderr.write('Parse error!\n')
 		return ["error"]
-
 	print "{0:.3f} |Building AST... ".format(time.time()-init)
 	ast = parse_result.value
-
-#####################################################
-# Checks the use of safety conditions (option -sp)#
-	strategy=True
-
 
 # Generates conditions for the whole program file #	
 	else:
@@ -53,6 +46,6 @@ def start(text):
 		conditions=parse_conds(conds)
 		if conditions:
 			conds=conditions.value
-			return vcgen(ast,conds[0], conds[1],strategy)
+			return vcgen(ast,conds[0], conds[1],True)
 		else:
 			return ["No conditions"]
