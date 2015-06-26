@@ -5,4 +5,4 @@ from django.http import HttpResponse, JsonResponse
 def getconds(request):
 	print "request mything", request.body
 	objs = request.body
-	return HttpResponse("heybi" + type(objs))
+	return HttpResponse("heybi" + str(type(objs)))
