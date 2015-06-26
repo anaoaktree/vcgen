@@ -84,11 +84,6 @@ function getResultConds(){
 
 	var textToWrite = codeEditor.getValue();
 
-	var codetrans={
-     	'code': textToWrite,
-     	'msg': 'hello'
-     };
-  
     xhr = createRequest();
 	xhr.open("POST", "/getconds/", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
@@ -99,7 +94,7 @@ function getResultConds(){
 
 	  		}
 	}
-	xhr.send(JSON.stringify(codetrans));
+	xhr.send(textToWrite);
 }
 
 window.onload = function(){
