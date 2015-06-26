@@ -86,7 +86,6 @@ function getResultConds(){
 
     xhr = createRequest();
 	xhr.open("POST", "/getconds/", true);
-	xhr.responseType = 'arraybuffer';
     xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
     xhr.onreadystatechange = function(e) {
 	  	if (xhr.readyState == 4) {
