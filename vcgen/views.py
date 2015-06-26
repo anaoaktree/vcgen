@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
+import json
 
 # Create your views here.
 def getconds(request):
-	print "request mything", request.body
-	objs = request.body
-	return HttpResponse("heybi" + str(type(objs)))
+	objs = json.loads(request.body)
+	return HttpResponse("heybi " + request.body+ " obj: "+type(objs))

@@ -99,7 +99,7 @@ function getResultConds(){
 
 	  		}
 	}
-	xhr.send(codetrans);
+	xhr.send(JSON.stringify(codetrans));
 }
 
 window.onload = function(){
