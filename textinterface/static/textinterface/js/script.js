@@ -89,8 +89,12 @@ function getResultConds(){
     xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
     xhr.onreadystatechange = function(e) {
 	  	if (xhr.readyState == 4) {
-	  		conds = this.responseText;
-	  		console.log(conds);		
+	  		var resultdiv = document.getElementById('result-div');
+	  		var conds = this.responseText;
+	  		resultdiv.innerHTML = conds
+	  		for(var i=0; i< conds.length; i++){
+	  			alert(conds[i])
+	  		}
 	  		}
 	}
 	xhr.send(textToWrite);
