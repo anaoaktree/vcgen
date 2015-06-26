@@ -86,7 +86,7 @@ function getResultConds(){
 
     xhr = createRequest();
 	xhr.open("POST", "/getconds/", true);
-    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.setRequestHeader('Content-Type', 'text/plain');
     xhr.setRequestHeader("X-CSRFToken", getCookie('csrftoken'));
     xhr.onreadystatechange = function() {
 	  	if (xhr.readyState == 4) {

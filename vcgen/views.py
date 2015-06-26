@@ -4,4 +4,4 @@ import json
 
 # Create your views here.
 def getconds(request):
-	return HttpResponse("heybi " + request.body)
+	return HttpResponse("heybi " + str(request.body))
