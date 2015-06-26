@@ -94,7 +94,7 @@ function getResultConds(){
 
 	  		}
 	}
-	xhr.send(textToWrite);
+	xhr.send(String(textToWrite));
 }
 
 window.onload = function(){
