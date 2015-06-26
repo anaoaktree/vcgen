@@ -5,4 +5,4 @@ import json
 # Create your views here.
 def getconds(request):
 	objs = json.loads(request.body)
-	return HttpResponse("heybi " + request.body+ " obj: "+type(objs))
+	return HttpResponse("heybi " + request.body+ " obj: "+str(type(objs)))
