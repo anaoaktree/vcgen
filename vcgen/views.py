@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
-import json
-
+import json, elsa
 # Create your views here.
 def getconds(request):
-	return HttpResponse("heybi " + str(request.body))
+	result = elsa.start(request.body)
+	return HttpResponse("heybi " + result[0])
