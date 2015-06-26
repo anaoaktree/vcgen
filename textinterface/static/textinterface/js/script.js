@@ -74,7 +74,7 @@ function getResultConds(){
      };
   
     xhr = createRequest();
-	xhr.open("GET", "/getconds/", true);
+	xhr.open("POST", "/getconds/", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onreadystatechange = function() {
 	  	if (xhr.readyState == 4) {
