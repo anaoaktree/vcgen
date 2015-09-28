@@ -43,6 +43,8 @@ section{
 #improvs{
 	background-color: #845229;
 	color:white;
+	border: 10px solid black;
+
 }
 
 #action{
@@ -51,6 +53,10 @@ section{
 
 .whitebg{
 	background-color: white;
+}
+
+#result-div{
+	border: 5px solid black;
 }
 /*-------*/
 
