@@ -4,7 +4,7 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 import json, elsa
 # Create your views here.
 
-@ensure_csrf_cookie
 def getconds(request):
 	result = elsa.start(request.body)
+	print "result type", type(result)
 	return HttpResponse(result)
