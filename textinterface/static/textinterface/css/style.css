@@ -17,17 +17,13 @@ h1,h2,h3{
 }
 
 #header,nav{
-	width: 90%;
+	width: 100%;
 	text-align: center;
-	border: 10px solid black;
-
 }
 
 #header{
-	width: calc(100%-20px);
+	width: calc(100% - 20px);
 	border: 10px solid black;
-
-
 }
 
 
@@ -51,7 +47,7 @@ section{
 #improvs{
 	background-color: #845229;
 	color:white;
-	width: calc(100%-20px);
+	width: calc(100% - 20px);
 	border: 10px solid black;
 }
 
