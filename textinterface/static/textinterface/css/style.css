@@ -51,6 +51,11 @@ section{
 	border: 10px solid black;
 }
 
+#improvs article{
+	display: block;
+	padding-bottom: 10px;
+}
+
 #action{
 	background-color: #F4B988;
 }
