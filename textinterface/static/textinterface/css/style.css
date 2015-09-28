@@ -21,7 +21,11 @@ body {
 #header h1{
 	padding-top: 20px;
 	padding-bottom: 10px;
+}
 
+#header p{
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 section{
@@ -32,6 +36,14 @@ article{
 	position: relative;
 	float: left;
 	width: 50%;
+}
+
+button{
+	background: black;
+	outline:0;
+	border:0;
+	border:1px solid black;
+	color:white;
 }
 
 .offscreen
