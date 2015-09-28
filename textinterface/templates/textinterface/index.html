@@ -52,7 +52,7 @@
 </nav>
 
  <hr>
-<section>
+<section id="action">
   <header class="offscreen">
   <h1> Annotation language interface </h1>
   <p>File input/output interface to generate the verification conditions</p>
@@ -60,15 +60,17 @@
 	<article>
     <header><h1> Input code</h1></header>
 	<textarea id="inputTextToSave"> </textarea>
-  <button id="getResult">Get Result</button>
+  <button id="getResult"><a href="#result-div">Get Result</a></button>
+  <div class="border">
 	<p>Filename to Save As:</p>
 	<input id="inputFileNameToSaveAs"></input>
 	<button id="saveAsFileBtn">Save Text to File</button>
-		
+	</div>
+  <div class="border">
     <p>Select a File to Load:</p>
 		<input type="file" id="fileToLoad">
 		<button id="loadFileBtn">Load Selected File</button>
-    
+  </div>
 
 	</article>
 	<article id="result-div">

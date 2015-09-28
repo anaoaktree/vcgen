@@ -33,11 +33,22 @@ h1,h2,h3{
 	padding-right: 5%;
 }
 
+/*----Sections---*/
 section{
 	position: relative;
 	float: left;
 	width: 100%;
 }
+
+#action{
+	background-color: #909391;
+}
+
+#improvs{
+	background-color: #FABD44;
+}
+/*-------*/
+
 
 article{
 	position: relative;
@@ -62,16 +73,17 @@ background-color: #FABD44;
 }
 
 #getResult{
+	margin-top:10px;
 	font-size: 20px;
 	position: relative;
 	padding: 10px 10px 10px 10px;
 	left:50%;
 }
 
-#improvs{
-	background-color: #FABD44;
-
+.border{
+	border: 1px solid black;
 }
+
 
 .offscreen
 {
@@ -99,6 +111,12 @@ a{
 	text-decoration: none;
 	border-bottom: 2px solid black;
 
+}
+
+button a{
+	color: inherit;
+	text-decoration: none;
+	border:0;
 }
 nav li a{
 	font-family: abc;
