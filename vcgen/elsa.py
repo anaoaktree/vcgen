@@ -48,6 +48,7 @@ def start(text):
 		conditions=parse_conds(conds)
 		if conditions:
 			conds=conditions.value
-			return [i+"\n" for i in vcgen(ast,conds[0], conds[1],True)]
+			vcresult= vcgen(ast,conds[0], conds[1],True)
+			return [i + "\n" for i in vcresult]
 		else:
 			return ["No conditions"]
