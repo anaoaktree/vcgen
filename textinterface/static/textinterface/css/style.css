@@ -12,11 +12,16 @@ body {
 	color: black;
 }
 
+h1,h2,h3{
+	text-align: center;
+}
 
 #header,nav{
 	width: 100%;
 	text-align: center;
 }
+
+
 
 #header h1{
 	padding-top: 20px;
@@ -30,6 +35,7 @@ body {
 
 section{
 	position: relative;
+	float: left;
 	width: 100%;
 }
 
