@@ -42,9 +42,10 @@ article{
 
 button{
 	background: #F9A300;
+	padding: 2px 2px 2px 2px;
 	outline:0;
 	border:0;
-	border:1px solid black;
+	font-size: 16px;
 	color:white;
 }
 
@@ -52,6 +53,10 @@ button{
 button:hover{
 cursor: pointer;
 background-color: #FABD44;
+}
+
+#getResult{
+	left:50%;
 }
 
 .offscreen
