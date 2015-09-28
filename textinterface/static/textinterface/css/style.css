@@ -62,7 +62,15 @@ background-color: #FABD44;
 }
 
 #getResult{
+	position: relative;
+	width: 30px;
+	height: 20px;
 	left:50%;
+}
+
+#improvs{
+	background-color: #FABD44;
+
 }
 
 .offscreen
