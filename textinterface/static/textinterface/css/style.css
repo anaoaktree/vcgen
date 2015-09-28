@@ -40,13 +40,13 @@ section{
 	width: 100%;
 }
 
-#action{
-	background-color: #F4B988;
-}
-
 #improvs{
 	background-color: #845229;
 	color:white;
+}
+
+#result-div{
+	background-color: #F4B988;
 }
 /*-------*/
 
