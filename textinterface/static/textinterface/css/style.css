@@ -6,7 +6,7 @@
 
 body, html { font-size: 100%; padding: 0; margin: 0; width: 100%; height: 100%}
 
-#header, nav, section{
+#header, section{
 	width: 100%;
 	text-align: center;
 }
@@ -33,3 +33,12 @@ height: 1px;
 width: 1px;
 overflow: hidden;
 }
+
+@media (min-width: 668px) { 
+
+article{
+	width: 100%;
+}
+
+}
+
