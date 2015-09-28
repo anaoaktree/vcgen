@@ -24,8 +24,8 @@
 
 <!-- Bootstrap -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<!-- xx Bootstrap -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+ xx Bootstrap -->
 
 <!-- Mine-->
 <link rel="stylesheet" href="{% static 'textinterface/css/style.css' %}">
@@ -39,12 +39,12 @@
   <p> Generates verification conditions for a toy language.
 </header>
 
-<section class="row">
+<section>
   <header class="offscreen">
   <h1> Annotation language interface </h1>
   <p>File input/output interface to generate the verification conditions</p>
   </header>
-	<article class="col-sm-6">
+	<article>
 	<textarea id="inputTextToSave"></textarea>
 		<p>Filename to Save As:</p>
 		<input id="inputFileNameToSaveAs"></input>
@@ -55,7 +55,7 @@
     <button id="getResult">Get Result</button>
 
 	</article>
-	<article class="col-sm-6" id="result-div">
+	<article id="result-div">
 		Result
 	</article>
 </section>
