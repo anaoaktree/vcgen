@@ -8,5 +8,6 @@ def getconds(request):
 	try:
 		result = elsa.start(request.body)
 	except TypeError:
+		pass
 		#result = "Something went wrong. \n Please contact me at one of the contact links above to solve this!"
 	return HttpResponse(result)
