@@ -5,6 +5,9 @@ import json, elsa
 # Create your views here.
 
 def getconds(request):
-	result = elsa.start(request.body)
+	try:
+		result = elsa.start(request.body)
+	except TypeError:
+		result= "something went wrong"
 	print "result type", type(result)
 	return HttpResponse(result)
