@@ -32,11 +32,19 @@
 
 </head>
 
-
-
 <body>
-<div class="row">
-	<div class="col-sm-6">
+
+<header>
+  <h1> VCGen - Verification Conditions Generator </h1>
+  <p> Generates verification conditions for a toy language.
+</header>
+
+<section class="row">
+  <header class="offscreen">
+  <h1> Annotation language interface </h1>
+  <p>File input/output interface to generate the verification conditions</p>
+  </header>
+	<article class="col-sm-6">
 	<textarea id="inputTextToSave"></textarea>
 		<p>Filename to Save As:</p>
 		<input id="inputFileNameToSaveAs"></input>
@@ -46,11 +54,11 @@
 		<button id="loadFileBtn">Load Selected File</button>
     <button id="getResult">Get Result</button>
 
-	</div>
-	<div class="col-sm-6" id="result-div">
+	</article>
+	<article class="col-sm-6" id="result-div">
 		Result
-	</div>
-</div>
+	</article>
+</section>
 <script>
 var minLines = 6;
 var startingValue = '';
