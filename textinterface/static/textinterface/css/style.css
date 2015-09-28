@@ -43,7 +43,7 @@ section{
 #improvs{
 	background-color: #845229;
 	color:white;
-	border: 10px solid black;
+	border: 10px solid white;
 
 }
 
@@ -66,7 +66,7 @@ article{
 	float: left;
 }
 
-#action article{
+#action .whitebag{
 	width: 50%;
 }
 
