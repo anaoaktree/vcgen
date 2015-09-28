@@ -45,8 +45,12 @@ section{
 	color:white;
 }
 
-#result-div{
+#action{
 	background-color: #F4B988;
+}
+
+.whitebg{
+	background-color: white;
 }
 /*-------*/
 
