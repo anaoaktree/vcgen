@@ -104,6 +104,9 @@ background-color: #FABD44;
 	border: 1px solid black;
 }
 
+.text-center{
+	text-align: center;
+}
 
 .offscreen
 {
