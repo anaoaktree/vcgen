@@ -23,7 +23,7 @@ h1,h2,h3{
 
 #header{
 	width: calc(100% - 20px);
-	border: 10px solid black;
+	border: 8px solid black;
 }
 
 
@@ -48,7 +48,7 @@ section{
 	background-color: #845229;
 	color:white;
 	width: calc(100% - 20px);
-	border: 10px solid black;
+	border: 8px solid black;
 }
 
 #improvs article{
