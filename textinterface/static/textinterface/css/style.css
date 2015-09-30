@@ -22,7 +22,7 @@ h1,h2,h3{
 }
 
 #header{
-	width: calc(100% - 20px);
+	width: calc(100% - 16px);
 	border: 8px solid black;
 }
 
@@ -47,7 +47,7 @@ section{
 #improvs{
 	background-color: #845229;
 	color:white;
-	width: calc(100% - 20px);
+	width: calc(100% - 16px);
 	border: 8px solid black;
 }
 
