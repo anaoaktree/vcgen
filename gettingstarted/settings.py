@@ -76,7 +76,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'gettingstarted.wsgi.application'
 
-
+CORS_ORIGIN_WHITELIST = (
+    'http://vcgen.herokuapp.com',
+)
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
