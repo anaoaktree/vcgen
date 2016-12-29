@@ -18,6 +18,12 @@ import dj_database_url
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
+# Allow all host headers
+ALLOWED_HOSTS = ['*']
+CORS_ORIGIN_ALLOW_ALL = True
+
+
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
@@ -25,7 +31,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 SECRET_KEY = 'i+acxn5(akgsn!sr4^qgf(^m&*@+g1@u^t@=8s@axc41ml*f=s'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DEBUG = True
 
@@ -76,10 +82,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'gettingstarted.wsgi.application'
 
-CORS_ORIGIN_WHITELIST = (
-    'http://vcgen.herokuapp.com',
-    'https://vcgen.herokuapp.com',
-)
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
@@ -99,7 +101,6 @@ USE_I18N = True
 USE_L10N = True
 USE_TZ = True
 
-
 # Parse database configuration from $DATABASE_URL
 DATABASES['default'] =  dj_database_url.config()
 
@@ -108,10 +109,6 @@ DATABASES['default']['ENGINE'] = 'django_postgrespool'
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-# Allow all host headers
-ALLOWED_HOSTS = [ 'http://vcgen.herokuapp.com',
-    'https://vcgen.herokuapp.com']
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
