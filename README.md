@@ -3,14 +3,12 @@
 The webapp is currently not live, please refer to the vcgen folder to try in your local machine. Instructions below :)
 
 ## vcgen folder description
-This folder contains all the code used in the VCGEN and some programs used to test it : 
-	* "hello.imp"
-	* "hello1.imp"
+
+This folder contains all the code used in the VCGEN and some programs used to test it, *hello.imp* and *hello1.imp*
 
 ### Instructions
 
-
-- To prove a program in a file, e.g., "file.imp" run: 
+- To prove a program in a file, e.g., "file.imp" run:*
 					```
 					python exec.py path_to_file/file.imp
 					```
