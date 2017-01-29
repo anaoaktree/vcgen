@@ -104,7 +104,7 @@ function getCookie(name) {
     }
     return cookieValue;
 }
-csrftoken = getCookie('csrftoken');
+var csrftoken = getCookie('csrftoken');
 
   startingValue = "#pre condition\n@ pre 0==0\n#post condition\n@ post x >= 0 implies res == x and x < 0 implies res == 0-x\n#program\nif (x >= 0) then  res := x else res := 0-x end"
 	var codeEditor = CodeMirror.fromTextArea(document.getElementById("inputTextToSave"), {
